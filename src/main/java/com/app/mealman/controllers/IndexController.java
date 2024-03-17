@@ -13,11 +13,10 @@ public class IndexController {
     UserService userService;
 
     @GetMapping("/")
-    String index() {
+    User index() {
         User user = new User();
         user.setUsername("taro");
         user.setEmail("sample@gmail.com");
-        userService.createUser(user);
-        return "OK";
+        return userService.createUser(user);
     }
 }

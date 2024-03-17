@@ -8,6 +8,13 @@ plugins {
 group = 'com.app'
 version = '0.0.1-SNAPSHOT'
 
+// compileJavaタスクのエンコーディング
+compileJava.options.encoding = 'UTF-8'
+// compileTestJavaタスクのエンコーディング
+compileTestJava.options.encoding = 'UTF-8'
+// javadocタスクのエンコーディング
+javadoc.options.encoding = 'UTF-8'
+
 java {
 	sourceCompatibility = '17'
 }
