@@ -14,6 +14,21 @@ public class User {
     @Column(name = "email")
     private String email;
 
+    @Column(name = "password_hash")
+    private String passwordHash;
+
+    @Column(name = "bio")
+    private String bio;
+
+    @Column(name = "profile_picture")
+    private String profilePicture;
+
+    @Column(name = "created_at")
+    private String createdAt;
+
+    @Column(name = "updated_at")
+    private String updatedAt;
+
     public User() {
     }
 
