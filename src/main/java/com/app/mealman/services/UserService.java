@@ -1,5 +1,6 @@
 package com.app.mealman.services;
 
+import com.app.mealman.dto.UserDto;
 import com.app.mealman.entities.User;
 import com.app.mealman.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,7 +32,12 @@ public class UserService {
     }
 
     // ユーザーの作成
-    public User createUser(User user) {
+    public User createUser(UserDto userDto) {
+        User user = new User();
+        // ユーザ名を設定
+        user.setUsername(userDto.getUsername());
+        // e-mailを設定
+        user.setEmail(userDto.getEmail());
         return userRepository.save(user);
     }
 
