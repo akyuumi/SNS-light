@@ -2,6 +2,8 @@ package com.app.mealman.entities;
 
 import jakarta.persistence.*;
 
+import java.time.ZonedDateTime;
+
 @Entity
 @Table(name = "users_tbl")
 public class User {
@@ -24,10 +26,10 @@ public class User {
     private String profilePicture;
 
     @Column(name = "created_at")
-    private String createdAt;
+    private ZonedDateTime createdAt;
 
     @Column(name = "updated_at")
-    private String updatedAt;
+    private ZonedDateTime  updatedAt;
 
     public User() {
     }
