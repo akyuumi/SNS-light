@@ -1,3 +1,65 @@
-# Default ignored files
-/shelf/
-/workspace.xml
+### Java ###
+*.class
+*.log
+
+### Maven ###
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+
+### Gradle ###
+.gradle/
+build/
+
+### Spring Boot ###
+*.jar
+*.war
+hs_err_pid*
+
+### IntelliJ IDEA ###
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+### Eclipse ###
+.classpath
+.project
+.settings/
+bin/
+
+### VS Code ###
+.vscode/
+
+### macOS ###
+.DS_Store
+
+### Windows ###
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+### Linux ###
+*~
+
+### Other common ignore patterns ###
+*.swp
+*.*~
+*.bak
+*.tmp
+*.log
+*.sql
+*.sqlite
+*.jks
+*.p12
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

@@ -1,3 +1,10 @@
+--サンプルテーブル
+create table sample_tbl (
+    id SERIAL PRIMARY KEY,
+    text varchar
+)
+
+--ユーザーテーブル
 CREATE TABLE users_tbl (
     user_id SERIAL PRIMARY KEY,
     username VARCHAR(255) UNIQUE NOT NULL,
