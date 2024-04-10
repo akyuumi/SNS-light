@@ -1,10 +1,12 @@
 --サンプルテーブル
-create table sample_tbl (
+DROP TABLE IF EXISTS sample_tbl;
+CREATE TABLE sample_tbl (
     id SERIAL PRIMARY KEY,
-    text varchar
+    text VARCHAR
 );
 
 --ユーザーテーブル
+DROP TABLE IF EXISTS users_tbl;
 CREATE TABLE users_tbl (
     user_id SERIAL PRIMARY KEY,
     username VARCHAR(255) UNIQUE NOT NULL,
@@ -17,6 +19,7 @@ CREATE TABLE users_tbl (
 );
 
 -- ポストテーブル (Posts)
+DROP TABLE IF EXISTS posts_tbl;
 CREATE TABLE posts_tbl (
     post_id SERIAL PRIMARY KEY,
     user_id INTEGER NOT NULL,
@@ -27,6 +30,7 @@ CREATE TABLE posts_tbl (
 );
 
 -- フォローテーブル (Follows)
+DROP TABLE IF EXISTS follows_tbl;
 CREATE TABLE follows_tbl (
     follow_id SERIAL PRIMARY KEY,
     follower_id INTEGER NOT NULL,
@@ -37,6 +41,7 @@ CREATE TABLE follows_tbl (
 );
 
 -- メッセージテーブル (Messages)
+DROP TABLE IF EXISTS messages_tbl;
 CREATE TABLE messages_tbl (
     message_id SERIAL PRIMARY KEY,
     sender_id INTEGER NOT NULL,
