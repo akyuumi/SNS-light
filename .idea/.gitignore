@@ -55,10 +55,10 @@ Desktop.ini
 *.bak
 *.tmp
 *.log
-*.sql
 *.sqlite
 *.jks
 *.p12
+*.lock
 node_modules/
 npm-debug.log*
 yarn-debug.log*
