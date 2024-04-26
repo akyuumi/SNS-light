@@ -15,7 +15,7 @@ buildNumber.properties
 
 ### Gradle ###
 .gradle/
-build/
+/build/
 
 ### Spring Boot ###
 *.jar

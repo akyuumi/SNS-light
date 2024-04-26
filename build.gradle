@@ -42,6 +42,8 @@ dependencies {
 	// Lombock
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
+	// Logback
+	compileOnly 'ch.qos.logback:logback-classic'
 	// Driver
 	runtimeOnly 'org.postgresql:postgresql'
 }
